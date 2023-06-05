@@ -68,7 +68,7 @@ For R analysis and plotting purposes, thoughout our R scripts and Excel files we
       
       ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/c524acf3-3de1-4062-9b84-31a12625d72c)
 
-      Example of SpectraMax M3 RFU column format of a microplate.
+      Example of SpectraMax M3 RFU table format of a microplate.
 
       The python code returns RFU data in column format:
       
