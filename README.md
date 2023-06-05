@@ -36,7 +36,7 @@ For R analysis and plotting purposes, thoughout our R scripts and Excel files we
 
     For the purposes of organization, this main folder has three subfolders.
 
-    Subfolder: micrompn
+   2.1) Subfolder: micrompn
     
     This folder contains the input and output files used with MicroMPN (https://github.com/USDA-ARS-GBRU/micrompn.git). The output of MicroMPN includes MPN, MPN adjusted, Jarvis 95%       CI, and a rarity index. The R analysis was preformed with both MPN and MPN adjusted values. Scientific paper only discusses and displays results for MPN values. The conclusions of     the paper were the same for both MPN and MPN adjusted values. 
     
@@ -44,7 +44,7 @@ For R analysis and plotting purposes, thoughout our R scripts and Excel files we
         
         micrompn_output - "OUTFILE_raw_trim_limit_detection_T48_bio_1.csv"
 
-     Subfolder: R_analysis
+     2.2) Subfolder: R_analysis
      
      This folder contains two files.The R script computes a Pearson correlation, a linear regression, a Bland Altman analysis, and Fisher's F-test.
      
@@ -52,20 +52,30 @@ For R analysis and plotting purposes, thoughout our R scripts and Excel files we
          
          R_input_file - 'limitdetection_bio1'
          
-      Subfolder: Excel_spreadsheet
+      2.3) Subfolder: Excel_spreadsheet
       
       This folder contains a single file with all of the plots. 
       
-      Subfolder: RFU_plate_data_transposed
+      2.4) Subfolder: SpectraMax_output_to_column_format
       
-      This folder contains a python scrript which converts RFU microplate data to column data. Instead of manually transposing plate data into coluns, users can take advantage of this       script.
+      This folder contains a python script which converts RFU microplate data in a table format (Output of SpectraMax M3) to column format. Users can then import the output into             MicroMPn for MPN calculations.
       
-      ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/674d12b1-3923-4c3f-bcb9-56cd86b36d55)
-      Example of SpectraMax M3 RFU plate data.
+        python_script - 'three_col_updated.py'
+        
+        input_file_example - 'limit_detection_T48_bio_1'
+        
+        output_file_example - 'limit_detection_T48_bio_1.csv'
+      
+      ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/c524acf3-3de1-4062-9b84-31a12625d72c)
+
+      Example of SpectraMax M3 RFU column format of a microplate.
 
       The python code returns RFU data in column format:
       
       ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/40d3c4f7-ade2-4844-9f42-d68c4df3e1d9)
+      
+      
+      
 
       
       
