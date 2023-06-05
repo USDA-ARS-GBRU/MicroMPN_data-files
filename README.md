@@ -61,9 +61,12 @@ For R analysis and plotting purposes, thoughout our R scripts and Excel files we
       This folder contains a python scrript which converts RFU microplate data to column data. Instead of manually transposing plate data into coluns, users can take advantage of this       script.
       
       ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/674d12b1-3923-4c3f-bcb9-56cd86b36d55)
+      Example of SpectraMax M3 RFU plate data.
+
+      The python code returns RFU data in column format:
+      
+      ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/40d3c4f7-ade2-4844-9f42-d68c4df3e1d9)
 
       
       
-      
-      Users will 
 
