@@ -16,7 +16,7 @@ Corresponding authors:
 For R analysis and plotting purposes, thoughout our R scripts and Excel files we reffered to data from soil-only microcosms as "simple". Whereas data obtained from soil and synthetic communities was labeled "complex".
 
 Folder name: plasmid_retention
-This folder contains three files. File one "paired t-test_analysis.txt" has the R script for a paired t-test analysis used to compare the means between bacterial couns obtained from agar with and without the antibiotic genetamicin. To run the analysis, use file "data_simple_complex.csv".
+This folder contains three files. File one "paired t-test_analysis.txt" has the R script for a paired_t_test_analysis used to compare the means between bacterial couns obtained from agar with and without the antibiotic genetamicin. To run the analysis, use file "data_simple_complex.csv".
 
 The second file "data_simple_complex.xlsx" contains two EXCEL tabs.
 Tab_1 - Paired_t_test_simple_complex (R output)
