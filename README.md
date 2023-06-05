@@ -15,10 +15,13 @@ Corresponding author:
 
 For R analysis and plotting purposes, thoughout our R scripts and Excel files we reffered to data from soil-only microcosms as "simple". Whereas data obtained from soil and synthetic communities was labeled "complex".
 
+
 1) Folder name: plasmid_retention
+
     This folder contains three files. 
     
     R_script - 'paired_t_test_analysis.txt' 
+    
     R_input_file - 'data_simple_complex.csv'
     Excel_spreadsheet - "data_simple_complex.xlsx" 
       Contains two tabs:
