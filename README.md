@@ -39,7 +39,7 @@ The data in this folder correspond to soil-only microcosm analysis and plots. Th
         
         micrompn_output - "OUTFILE_raw_trim_limit_detection_T48_bio_1.csv"
 
-     2.2) Subfolder: R_analysis
+   2.2) Subfolder: R_analysis
      
      This folder contains two files, an R script and an input file. The R script computes a Pearson correlation, a linear regression, a Bland Altman analysis, and Fisher's F-test          using CFU and MPN data. 
      
@@ -47,11 +47,11 @@ The data in this folder correspond to soil-only microcosm analysis and plots. Th
          
          R_input_file - 'limitdetection_bio1.csv'
          
-      2.3) Subfolder: Excel_spreadsheet
+   2.3) Subfolder: Excel_spreadsheet
       
       This folder contains a single file with all of the plots for soil-only microcosms. Both MPN and MPN adjusted data were analyzed in R.
       
-      2.4) Subfolder: SpectraMax_output_to_column_format
+   2.4) Subfolder: SpectraMax_output_to_column_format
       
       This folder contains a python script which converts RFU microplate data (output of SpectraMax M3) to a column format. Users can then import the output file into MicroMPN               for MPN calculations.
       
@@ -60,10 +60,12 @@ The data in this folder correspond to soil-only microcosm analysis and plots. Th
         input_file_example - 'limit_detection_T48_bio_1'
         
         output_file_example - 'limit_detection_T48_bio_1.csv'
+        
       
       ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/c524acf3-3de1-4062-9b84-31a12625d72c)
 
       Example of SpectraMax M3 RFU table format of a microplate.
+      
 
       The python code returns RFU data in column format:
       
