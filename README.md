@@ -10,7 +10,7 @@ Affiliations:
 3 United States Department of Agriculture, Agricultural Research Service, Systematic Entomology Laboratory, Electron and Confocal Microscopy Unit, Beltsville, MD 20013, USA
 4 Present address: Genomatica, San Diego, CA 92121 USA
 
-Corresponding authors:
+Corresponding author:
 #Adam Rivers: adam.rivers@usda.gov
 
 For R analysis and plotting purposes, thoughout our R scripts and Excel files we reffered to data from soil-only microcosms as "simple". Whereas data obtained from soil and synthetic communities was labeled "complex".
@@ -20,5 +20,18 @@ This folder contains three files. File one "paired t-test_analysis.txt" has the 
 
 The second file "data_simple_complex.xlsx" contains two EXCEL tabs.
 Tab_1 - Paired_t_test_simple_complex (R output)
-Tab_2 - Boxplots
+Tab_2 - Boxplots (figures)
+
+Main Folder name: MicroMPN_soil_only_microcosm
+
+For the purposes of organization, this main folder has several subfolders.
+
+Folder name: 
+The MPN estimates were calculated with the Python package MicroMPN.
+Files:
+micrompn_input - 
+micrompn_output - "OUTFILE_raw_trim_limit_detection_T48_bio_1.csv"
+
+
+micrompn_output
 
