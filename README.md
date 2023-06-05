@@ -16,29 +16,24 @@ Corresponding author:
 For R analysis and plotting purposes, thoughout our R scripts and Excel files we reffered to data from soil-only microcosms as "simple". Whereas data obtained from soil and synthetic communities was labeled "complex".
 
 
-1) Folder name: plasmid_retention
+1) Folder: plasmid_retention
 
-    This folder contains three files. 
+   This folder contains three files. 
     
     R_script - 'paired_t_test_analysis.txt' 
     
     R_input_file - 'data_simple_complex.csv'
     
-    Excel_spreadsheet - "data_simple_complex.xlsx" 
-    
-      Contains two tabs:
+    Excel_spreadsheet - "data_simple_complex.xlsx" (The spreadsheet contains the R output and boxplots.)
       
-        Tab_1 - Paired_t_test_simple_complex (R output)
-        
-        Tab_2 - Boxplots (figures)
 
-2) Folder name: MicroMPN_soil_only_microcosm
+2) Folder: MicroMPN_soil_only_microcosm
 
-    For the purposes of organization, this main folder has three subfolders.
+The data in this folder correspond to soil-only microcosm analysis and plots. This main folder has three subfolders.
 
    2.1) Subfolder: micrompn
     
-    This folder contains the input and output files used with MicroMPN (https://github.com/USDA-ARS-GBRU/micrompn.git). The output of MicroMPN includes MPN, MPN adjusted, Jarvis 95%       CI, and a rarity index. The R analysis was preformed with both MPN and MPN adjusted values. Scientific paper only discusses and displays results for MPN values. The conclusions of     the paper were the same for both MPN and MPN adjusted values. 
+    This folder contains the input and output files used with MicroMPN (https://github.com/USDA-ARS-GBRU/micrompn.git). The output of MicroMPN includes MPN, MPN adjusted, Jarvis 95%       CI, and a rarity index. Analysis of data was performed in R and both MPN and MPN adjusted values were analyzed. However, the scientific paper only discusses and displays results       for MPN values. Regardless, the conclusions of the paper remained the same. 
     
         micrompn_input - "limit_detection_T48_Bio_1.csv"
         
@@ -46,19 +41,19 @@ For R analysis and plotting purposes, thoughout our R scripts and Excel files we
 
      2.2) Subfolder: R_analysis
      
-     This folder contains two files.The R script computes a Pearson correlation, a linear regression, a Bland Altman analysis, and Fisher's F-test.
+     This folder contains two files, an R script and an input file. The R script computes a Pearson correlation, a linear regression, a Bland Altman analysis, and Fisher's F-test          using CFU and MPN data. 
      
-         R_script - 'backup_R_corr_regre_BA_ftest_bio1_mpn"
+         R_script - 'backup_R_corr_regre_BA_ftest_bio1_mpn.txt'
          
-         R_input_file - 'limitdetection_bio1'
+         R_input_file - 'limitdetection_bio1.csv'
          
       2.3) Subfolder: Excel_spreadsheet
       
-      This folder contains a single file with all of the plots. 
+      This folder contains a single file with all of the plots for soil-only microcosms. Both MPN and MPN adjusted data were analyzed in R.
       
       2.4) Subfolder: SpectraMax_output_to_column_format
       
-      This folder contains a python script which converts RFU microplate data in a table format (Output of SpectraMax M3) to column format. Users can then import the output into             MicroMPn for MPN calculations.
+      This folder contains a python script which converts RFU microplate data (output of SpectraMax M3) to a column format. Users can then import the output file into MicroMPN               for MPN calculations.
       
         python_script - 'three_col_updated.py'
         
