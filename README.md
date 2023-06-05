@@ -55,4 +55,8 @@ For R analysis and plotting purposes, thoughout our R scripts and Excel files we
       Subfolder: Excel_spreadsheet
       
       This folder contains a single file with all of the plots. 
+      
+      Subfolder: RFU_plate_data_transposed
+      
+      This folder contains a python scrript which converts RFU microplate data to column data. Instead of manually transposing plate data into coluns, users can take advantage of this       script.
 
