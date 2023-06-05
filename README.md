@@ -1,1 +1,1 @@
-# microMPN-paper
+# MicroMPN-paper
