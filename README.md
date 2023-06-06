@@ -85,13 +85,13 @@ Note: For R analysis and plotting purposes, thoughout our R scripts and Excel fi
      
   **3. Folder: MicroMPN_soil_and_synthetic_communities
   
-  - This folder contains the MPN and CFU count data from soil experiments conducted with synthetic communities.
+  - This folder contains the MPN and CFU count data from soil experiments conducted with synthetic communities. A total of six communities (C1 – C6), each composed of 10 strains, were evaluated for their biocontrol activity against R. solanacearum in soil microcosms.
 
    - 2.1. *Subfolder*: micrompn
    
       - This folder contains the input and output files used with MicroMPN (https://github.com/USDA-ARS-GBRU/micrompn.git). The output of MicroMPN includes MPN, MPN adjusted, Jarvis 95%       CI, and a rarity index. Analysis of data was performed in R and both MPN and MPN adjusted values were analyzed. However, the scientific paper only discusses and displays results       for MPN values. Regardless, the conclusions of the paper remained the same. 
     
-      - micrompn_input - ""
+      - micrompn_input - "Copy_C1_C2_C3_T48.csv" and "Copy_C4_C5_C6_T48.csv"
         
       - micrompn_output - ""
 
