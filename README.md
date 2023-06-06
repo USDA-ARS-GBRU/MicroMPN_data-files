@@ -20,7 +20,7 @@ Note: For R analysis and plotting purposes, thoughout our R scripts and Excel fi
 
 **1. Folder**: plasmid_retention
 
- - This folder contains the data corresponding to the assessment of vector retention in *R. solanacearum* in soil lacking antibiotic selection. 
+ - This folder contains the CFU data corresponding to the assessment of vector retention in *R. solanacearum* in soil lacking antibiotic selection. 
     
     - R_script - "paired_t_test_analysis.txt"
     
@@ -33,7 +33,7 @@ Note: For R analysis and plotting purposes, thoughout our R scripts and Excel fi
 
 **2. Folder**: MicroMPN_soil_only_microcosm
 
-- This folder contains the data corresponding to soil-only microcosms. 
+- This folder contains the MPN and CFU data corresponding to soil-only microcosms. 
 
    - 2.1. *Subfolder*: micrompn
    
@@ -81,7 +81,32 @@ Note: For R analysis and plotting purposes, thoughout our R scripts and Excel fi
        
       <figure>
        <figcaption>Output of data re-arranged into 4 columns.</figcaption>
-     </figure>     
+     </figure>    
+     
+  **3. Folder: soil_and_synthetic_communities
+  
+  - This folder contains the MPN and CFU count data from soil experiments conducted with synthetic communities.
+
+   - 2.1. *Subfolder*: micrompn
+   
+      - This folder contains the input and output files used with MicroMPN (https://github.com/USDA-ARS-GBRU/micrompn.git). The output of MicroMPN includes MPN, MPN adjusted, Jarvis 95%       CI, and a rarity index. Analysis of data was performed in R and both MPN and MPN adjusted values were analyzed. However, the scientific paper only discusses and displays results       for MPN values. Regardless, the conclusions of the paper remained the same. 
+    
+      - micrompn_input - ""
+        
+      - micrompn_output - ""
+
+   - 2.2. *Subfolder*: R_analysis
+     
+      - This folder contains two files, an R script and an input file. The R script computes a Pearson correlation, a linear regression, a Bland Altman analysis, and Fisher's F-test          using CFU and MPN data. 
+     
+      - R_script - "backup_dataMPN_micrompn_trim_norarity_community_R.txt"
+         
+      - R_input_file - "data_micrompn_trim_norarity_community_R.csv"
+         
+  - 2.3. *Subfolder*: Excel_spreadsheet
+      
+     - This folder contains a single file with all of the plots for soil-only microcosms. Both MPN and MPN adjusted data were analyzed in R.
+      
 
 
       
