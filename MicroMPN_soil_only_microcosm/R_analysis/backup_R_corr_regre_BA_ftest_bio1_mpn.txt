@@ -11,7 +11,7 @@ library(SimplyAgree)
 library(gvlma)
 
 
-########MPN values calculated using the --trim_positives and rarity index greater than 1e-4
+########MPN values calculated using the --trim_positives and rarity index greater than 1e-4, cutoff = 6
 
 #############################Running a correlation analysis
 
@@ -53,14 +53,10 @@ check(a1)
 
 data_difference <- mutate(data, mean = ((MPN+CFU)/2), diff = CFU - MPN)
 
-hist(data_difference$diff, main = "Histogram of mean difference", xlab = "mean_dif", col= "steelblue")
-
-xy_plot = plot(data_difference$mean, data_difference$diff)
-
 norm_mean_diff = shapiro.test(x = data_difference$diff)
 
 
-#heteroskedasticity manual calculation done by Andrew
+#heteroskedasticity manual calculation: Breusch-Pagan Test
 bias = mean(data_difference$diff)
 ba_res = data_difference$mean - bias
 mlev = sum(ba_res^2) / length(ba_res)
