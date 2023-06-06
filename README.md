@@ -22,11 +22,13 @@ Note: For R analysis and plotting purposes, thoughout our R scripts and Excel fi
 
  - This folder contains the data corresponding to the assessment of vector retention in *R. solanacearum* in soil lacking antibiotic selection. 
     
-    - R_script - 'paired_t_test_analysis.txt' 
+    - R_script - "paired_t_test_analysis.txt"
     
-    - R_input_file - 'data_simple_complex.csv'
+    - R_input_file - 'data_simple_complex.csv"
     
     - Excel_spreadsheet - "data_simple_complex.xlsx" (The spreadsheet contains the R output and boxplots.)
+
+    - Excel_spreadsheets - "CFU_simple.xlsx" and "CFU_complex.xlsx" (Raw CFU data counts)
       
 
 **2. Folder**: MicroMPN_soil_only_microcosm
