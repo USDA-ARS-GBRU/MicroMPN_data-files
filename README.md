@@ -83,7 +83,7 @@ Note: For R analysis and plotting purposes, thoughout our R scripts and Excel fi
        <figcaption>Output of data re-arranged into 4 columns.</figcaption>
      </figure>    
      
-  **3. Folder: soil_and_synthetic_communities
+  **3. Folder: MicroMPN_soil_and_synthetic_communities
   
   - This folder contains the MPN and CFU count data from soil experiments conducted with synthetic communities.
 
