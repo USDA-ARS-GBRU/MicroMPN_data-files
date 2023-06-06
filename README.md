@@ -68,11 +68,13 @@ Note: For R analysis and plotting purposes, thoughout our R scripts and Excel fi
      - output_file_example - "limit_detection_T48_bio_1.csv"
       
      ### Input Example
-        ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/c524acf3-3de1-4062-9b84-31a12625d72c)
+       ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/c524acf3-3de1-4062-9b84-31a12625d72c)
 
        <figure>
         <figcaption>Example of SpectraMax M3 RFU table format of a 96-well microplate.</figcaption>
       </figure> 
+      
+    
       
      ### Output Example
       ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/40d3c4f7-ade2-4844-9f42-d68c4df3e1d9)
