@@ -60,11 +60,11 @@ Note: For R analysis and plotting purposes, thoughout our R scripts and Excel fi
      - input_file_example - "limit_detection_T48_bio_1"   
              
      - python_script - "three_col_updated.py"
+
+        - The python code returns RFU data in column format.
            
      - output_file_example - "limit_detection_T48_bio_1.csv"
       
-     - The python code returns RFU data in column format:
-     
      ### Input Example
         ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/c524acf3-3de1-4062-9b84-31a12625d72c)
 
