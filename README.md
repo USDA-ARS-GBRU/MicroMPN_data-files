@@ -76,15 +76,11 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
 
    - 4.1. *Subfolder*: R_analysis
      
-      - This folder contains two files, an R script and an R input file. Differences between group means for the MPN-RFU microplate assay were compared by a one-way ANOVA, followed by the post-hoc test for multiple comparisons Tukey’s Honest Significant Differences. However, for spotting on agar, since the assumption of normality was violated, we ran the non-parametric test Kruskal-Wallis, followed by the Dunn’s test for multiple comparisons. The input file contains both MPN and MPN adjusted data. Users can run the analysis with MPN adjusted values by simply subsetting for the correct columns in the input file.
-
-      - R_script - "backup_oneway_dataMPN_micrompn_trim_norarity_community_R.txt"
-         
-      - R_input_file - "data_micrompn_trim_norarity_community_R.csv" (the same file used in section 3.2)
+      - This folder contains two files, an R script ("backup_oneway_dataMPN_micrompn_trim_norarity_community_R.txt") and an input ("data_micrompn_trim_norarity_community_R.csv") file. Differences between group means for the MPN-RFU microplate assay were compared by a one-way ANOVA, followed by the post-hoc test for multiple comparisons Tukey’s Honest Significant Differences. However, for spotting on agar, since the assumption of normality was violated, we ran the non-parametric test Kruskal-Wallis, followed by the Dunn’s test for multiple comparisons. The input file contains both MPN and MPN adjusted data. Users can run the analysis with MPN adjusted values by simply subsetting for the correct columns in the input file.
          
     - 4.2. *Subfolder*: Excel_spreadsheet
       
-       - This folder contains a single file with all the plots corresponding to multiple comparison analysis. Both MPN and MPN adjusted data were analyzed in R and were plotted in Excel.
+       - This folder contains a single file ("multiple_comparisons.xlsx") with all the plots corresponding to multiple comparison analysis. Both MPN and MPN adjusted data were analyzed in R and were plotted in Excel.
 
   
 5. **Folder**: SpectraMax_output_to_column_format
