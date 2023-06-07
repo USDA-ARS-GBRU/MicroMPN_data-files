@@ -20,7 +20,7 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
 
 **1. Folder**: plasmid_retention
 
- - This folder contains the CFU data corresponding to the assessment of vector retention in *R. solanacearum* in soil lacking antibiotic selection. In In the Excel files we referred to data from soil-only microcosms as **"simple"**. Whereas data obtained from soil and synthetic communities was labeled **"complex".**
+- This folder contains the CFU/g data corresponding to experiments assessing vector retention in *R. solanacearum* in soil lacking antibiotic selection. In the Excel files, we referred to data from soil-only microcosms as **"simple"**. Whereas data obtained from soil and synthetic communities was labeled **"complex".**
 
    - 1.1. *Subfolder*: R_analysis
      
@@ -40,19 +40,21 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
 
 **2. Folder**: MicroMPN_soil_only_microcosm
 
-- This folder contains the MPN and CFU data corresponding to soil-only microcosms. 
+- This folder contains the MPN/g and CFU/g data corresponding to soil-only microcosms experiments. 
 
    - 2.1. *Subfolder*: micrompn
    
-      - This folder contains the input and output files used with ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn). The output of MicroMPN includes MPN, MPN adjusted, Jarvis 95%       CI, and a rarity index. Analysis of data was performed in R and both MPN and MPN adjusted values were analyzed. However, the scientific paper only discusses and displays results       for MPN values. Regardless, the conclusions of the paper remained the same. 
-    
+      - This folder contains the input and output files used with ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn). The output of MicroMPN includes MPN, MPN adjusted, Jarvis 95%       CI, and a rarity index.
+      
       - micrompn_input - "limit_detection_T48_Bio_1.csv"
         
       - micrompn_output - "OUTFILE_raw_trim_limit_detection_T48_bio_1.csv"
 
    - 2.2. *Subfolder*: R_analysis
      
-      - This folder contains two files, an R script and an input file. The R script computes a Pearson correlation, a linear regression, a Bland Altman analysis, and Fisher's F-test          using CFU and MPN data. 
+      - This folder contains two files, an R script and an input file. The R script computes a Pearson correlation, a linear regression, a Bland Altman analysis, and Fisher's F-test          using MPN/g and CFU/g data. The input file contains both MPN and MPN adjusted data. Users can run the analysis with MPN adjusted values by simply subsetting for the correct columns in the input file.
+
+     -  Statistical analysis was performed in R v4.3.0 (R Core Team, 2023). Both MPN and MPN adjusted values were analyzed. However, the scientific paper only discusses and displays results       for MPN values. The conclusions of the paper were not affected by MPN adjusted values. 
      
       - R_script - "backup_R_corr_regre_BA_ftest_bio1_mpn.txt"
          
@@ -60,7 +62,7 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
          
   - 2.3. *Subfolder*: Excel_spreadsheet
       
-     - This folder contains a single file with all of the plots for soil-only microcosms. Both MPN and MPN adjusted data were analyzed in R.
+     - This folder contains a single file with all of the Excel plots. 
       
    - 2.4. *Subfolder*: SpectraMax_output_to_column_format
       
@@ -96,7 +98,7 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
 
    - 3.1. *Subfolder*: micrompn
    
-      - This folder contains the input and output files used with ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn). The output of MicroMPN includes MPN, MPN adjusted, Jarvis 95%       CI, and a rarity index. Analysis of data was performed in R. Both MPN and MPN adjusted values were analyzed. However, the scientific paper only discusses and displays results       for MPN values. The conclusions of the paper remain the same using MPN adjusted values. 
+      - This folder contains the input and output files used with ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn). The output of MicroMPN includes MPN, MPN adjusted, Jarvis 95%       CI, and a rarity index. 
     
       - micrompn_input - "Copy_C1_C2_C3_T48.csv" and "Copy_C4_C5_C6_T48.csv"
         
@@ -104,7 +106,9 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
 
    - 3.2. *Subfolder*: R_analysis
      
-      - This folder contains two files, an R script and an input file. The R script computes a Pearson correlation, a linear regression, a Bland Altman analysis, and Fisher's F-test          using CFU and MPN data.  The input file contains both MPN and MPN adjusted data. Users can subset the columns to run the analysis with either of the MPN values.
+      - This folder contains two files, an R script and an input file. The R script computes a Pearson correlation, a linear regression, a Bland Altman analysis, and Fisher's F-test          using MPN/g and CFU/g data. The input file contains both MPN and MPN adjusted data. Users can run the analysis with MPN adjusted values by simply subsetting for the correct columns in the input file.
+
+      -  Statistical analysis was performed in R v4.3.0 (R Core Team, 2023). Both MPN and MPN adjusted values were analyzed. However, the scientific paper only discusses and displays results       for MPN values. The conclusions of the paper were not affected by MPN adjusted values. 
      
       - R_script - "backup_dataMPN_micrompn_trim_norarity_community_R.txt"
          
@@ -112,7 +116,7 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
          
   - 3.3. *Subfolder*: Excel_spreadsheet
       
-     - This folder contains a single file with all of the plots for soil-only microcosms. Both MPN and MPN adjusted data were analyzed in R and were plotted in Excel.
+     - This folder contains a single file with all of the Excel plots.
       
 
 **4. Folder**: multiple_comparisons
@@ -121,8 +125,8 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
 
    - 4.1. *Subfolder*: R_analysis
      
-      - This folder contains two files, an R script and an R input file. Differences between group means for the MPN-RFU microplate assay were compared by a one-way ANOVA, followed by the post-hoc test for multiple comparisons Tukey’s Honest Significant Differences. However, for spotting on agar, since the assumption of normality was violated, we ran the non-parametric test Kruskal-Wallis, followed by the Dunn’s test for multiple comparisons. The input file contains both MPN and MPN adjusted data. Users can subset the columns to run the analysis with either of the MPN values.
-     
+      - This folder contains two files, an R script and an R input file. Differences between group means for the MPN-RFU microplate assay were compared by a one-way ANOVA, followed by the post-hoc test for multiple comparisons Tukey’s Honest Significant Differences. However, for spotting on agar, since the assumption of normality was violated, we ran the non-parametric test Kruskal-Wallis, followed by the Dunn’s test for multiple comparisons. The input file contains both MPN and MPN adjusted data. Users can run the analysis with MPN adjusted values by simply subsetting for the correct columns in the input file.
+
       - R_script - "backup_oneway_dataMPN_micrompn_trim_norarity_community_R.txt"
          
       - R_input_file - "data_micrompn_trim_norarity_community_R.csv" (the same file used in section 3.2)
