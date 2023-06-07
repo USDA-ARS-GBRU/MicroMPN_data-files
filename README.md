@@ -16,20 +16,27 @@ Corresponding author:
 
 MPN values were calculated with the Python package ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn.git).
 
-Note: For R analysis and plotting purposes, thoughout our R scripts and Excel files we referred to data from soil-only microcosms as **"simple"**. Whereas data obtained from soil and synthetic communities was labeled **"complex".**
+
 
 **1. Folder**: plasmid_retention
 
- - This folder contains the CFU data corresponding to the assessment of vector retention in *R. solanacearum* in soil lacking antibiotic selection. 
-    
-    - R_script - "paired_t_test_analysis.txt"
-    
-    - R_input_file - 'data_simple_complex.csv"
-    
-    - Excel_spreadsheet - "data_simple_complex.xlsx" (The spreadsheet contains the R output and boxplots.)
+ - This folder contains the CFU data corresponding to the assessment of vector retention in *R. solanacearum* in soil lacking antibiotic selection. In In the Excel files we referred to data from soil-only microcosms as **"simple"**. Whereas data obtained from soil and synthetic communities was labeled **"complex".**
 
-    - Excel_spreadsheets - "CFU_simple.xlsx" and "CFU_complex.xlsx" (Raw CFU data counts)
+   - 1.1. *Subfolder*: R_analysis
+     
+     - This folder contains two files, an R script and an input file. The R script computes a paired_t_test. 
+
+     - R_script - "paired_t_test_analysis.txt"
+
+     - R_input_file - "data_simple_complex.csv"
+
+   - 1.2. *Subfolder*: Excel_spreadsheets
       
+      - This folder contains three Excel files.
+
+      - CFU_data - "CFU_simple.xlsx" and "CFU_complex.xlsx" (raw CFU data)
+
+      - plots - "data_simple_complex.xlsx"
 
 **2. Folder**: MicroMPN_soil_only_microcosm
 
