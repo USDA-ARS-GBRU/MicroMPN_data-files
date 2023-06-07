@@ -12,9 +12,10 @@ Corresponding author:
 
 ## Data Folders
 
-*The data files in this repo contain the raw MPN and CFU counts and their normalized values by grams of soil (MPN/g and CFU/g). All statistical analyses were performed in R v4.3.0 (R Core Team, 2023). Raw and normalized data counts, R outputs, and plots were compiled into an Excel spreadsheet.*
+*The data files in this repo contain the raw MPN and CFU counts and their normalized values by grams of soil (MPN/g and CFU/g). All statistical analysis were performed in R v4.3.0 (R Core Team, 2023). Raw and normalized data counts, R outputs, and plots were compiled into Excel spreadsheets.*
 
 MPN values were calculated with the Python package ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn).
+
 
 
 **1. Folder**: plasmid_retention
@@ -28,6 +29,7 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
    - 1.2. *Subfolder*: Excel_spreadsheets
       
       - This folder contains three Excel files. Raw CFU data sets: "CFU_simple.xlsx" and "CFU_complex.xlsx". The plots published in the paper are found in "data_simple_complex.xlsx".
+
 
 **2. Folder**: MicroMPN_soil_only_microcosm
 
@@ -46,7 +48,8 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
   - 2.3. *Subfolder*: Excel_spreadsheet
       
      - This folder contains a single Excel file ("git_micrompn_trim_norarity_soil_only.xlsx") with the raw data sets, MicroMPN output, CFU/g data, and all of the plots published in the paper. 
-        
+
+
 **3. Folder**: MicroMPN_soil_and_synthetic_communities
   
 - This folder contains the MPN and CFU count data from soil experiments conducted with synthetic communities. A total of six communities (C1 – C6), each composed of 10 strains, were evaluated for their biocontrol activity against *R. solanacearum* in soil microcosms.
@@ -68,7 +71,8 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
    - 3.4. *Subfolder*: Raw_data
 
       - This contains two Excel files ("Copy_C1-C3 MPN 48 H MPN fixed.xlsx" and "Copy_C4-C6 MPN 48 H MPN fixed.xlsx") with the raw data sets for MPN and CFU data.
-      
+     
+     
 **4. Folder**: multiple_comparisons
 
 - To assess if a community’s suppressive activity was independent of the method (MPN-RFU microplate assay vs spotting on agar) being used, we compared the mean of every community to the mean of the control (rfp-Rs5). 
@@ -82,33 +86,61 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
        - This folder contains a single file ("multiple_comparisons.xlsx") with all the plots corresponding to multiple comparison analysis. Both MPN and MPN adjusted data were analyzed in R and were plotted in Excel.
 
   
-5. **Folder**: SpectraMax_output_to_column_format
+**5. Folder**: SpectraMax_output_to_column_format
       
-     - This folder contains a python script ("four_col_updated.py") which converts RFU microplate data (specifically the output of SpectraMax M3) to a column format compatible with ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn). An example input ("soil_only.txt") and output ("soil_only.csv") files are provided.
+- This folder contains a python script ("four_col_updated.py") which converts RFU microplate data (specifically the output of SpectraMax M3) to a column format compatible with ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn). An example input ("soil_only.txt") and output ("soil_only.csv") files are provided.
       
      ### Input Example
-      ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/c524acf3-3de1-4062-9b84-31a12625d72c)
+     
+     ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/c524acf3-3de1-4062-9b84-31a12625d72c)
 
-      <figure>
-       <figcaption>Example of SpectraMax M3 RFU table format of a 96-well microplate.</figcaption>
-     </figure> 
+     <figure>
+      <figcaption>Example of SpectraMax M3 RFU table format of a 96-well microplate.</figcaption>
+    </figure> 
       
     
       
      ### Output Example
-      ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/40d3c4f7-ade2-4844-9f42-d68c4df3e1d9)
-       
-      <figure>
-       <figcaption>Output of data re-arranged into 4 columns.</figcaption>
-     </figure>    
      
- 6. **Folder**: microplate_layout
+     ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/40d3c4f7-ade2-4844-9f42-d68c4df3e1d9)
+       
+     <figure>
+      <figcaption>Output of data re-arranged into 4 columns.</figcaption>
+    </figure>  
+     
+     
+ **6. Folder**: microplate_layout
       
-     - This folder contains a TOML file ("microplate.toml") specifying a 96-well microplate layout. In our experimental setup, our plate rows (A – H) were assigned a replicate value (1 – 8), while our columns (1 – 12) represented a particular dilution factor (1e00 – 1e-11). For this reason, each plate was divided into a single 12x8 sample block. This TOML file is needed to run ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn) with any of the micrompn input files proived in this repo.
+ - This folder contains a TOML file ("microplate.toml") specifying a 96-well microplate layout. In our experimental setup, our plate rows (A – H) were assigned a replicate value (1 – 8), while our columns (1 – 12) represented a particular dilution factor (1e00 – 1e-11). For this reason, each plate was divided into a single 12x8 sample block. This TOML file is needed to run ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn) with any of the micrompn input files proived in this repo. 
 
-     - An example of how to run MicroMPN from a Jupyter Notebook can be found in protocols.io under the name "MicroMPN: Software for Automating Most Probable Number Estimates from Laboratory Microplates".
+      ### TOML Microplate layout example: 
 
-     - 
-     - 
-      
+      ![wellmap dilution](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/995e55ca-3df7-4881-a87a-b5e4c57d161a)
+
+      ![wellmap replicate](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/ef4308af-284b-47fa-9dcb-780b83a167ae)
+
+```
+
+#To visualize the TOML file, users will need to first install ["wellmap"](https://wellmap.readthedocs.io/en/latest/index.html). 
+
+wellmap.show("microplate.toml")
+
+```
+
+  - To replicate our MPN estimates using the python package ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn), the input files (see micrompn folders), and the TOML file provided here, simply run the following command:
+
+```
+
+! micrompn --wellmap microplate.toml --data "C:\location\of\CSV\file\input_name.csv" --cutoff 6 
+--outfile "C:\location\of\CSV\output\file\OUTFILE_name.csv" 
+--plate_name "plate_unique" 
+--value_name "rfu"
+ --well_name "plate_well" 
+--trim_positives
+
+```
+
+ - For more information on how to install MicroMPN visit (https://github.com/USDA-ARS-GBRU/micrompn).
+ 
+ - An example on how to run MicroMPN from a Jupyter Notebook is availabloe through protocols.io under the name "MicroMPN: Software for Automating Most Probable Number Estimates from Laboratory Microplates".
 
