@@ -17,7 +17,6 @@ Corresponding author:
 MPN values were calculated with the Python package ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn).
 
 
-
 **1. Folder**: plasmid_retention
 
 - This folder contains the CFU/g data corresponding to experiments assessing vector retention in *R. solanacearum* in soil lacking antibiotic selection. In the Excel files, we referred to data from soil-only microcosms as **"simple"**. Whereas data obtained from soil and synthetic communities was labeled **"complex".**
@@ -102,5 +101,14 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
       <figure>
        <figcaption>Output of data re-arranged into 4 columns.</figcaption>
      </figure>    
+     
+ 6. **Folder**: microplate_layout
+      
+     - This folder contains a TOML file ("microplate.toml") specifying a 96-well microplate layout. In our experimental setup, our plate rows (A – H) were assigned a replicate value (1 – 8), while our columns (1 – 12) represented a particular dilution factor (1e00 – 1e-11). For this reason, each plate was divided into a single 12x8 sample block. This TOML file is needed to run ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn) with any of the micrompn input files proived in this repo.
+
+     - An example of how to run MicroMPN from a Jupyter Notebook can be found in protocols.io under the name "MicroMPN: Software for Automating Most Probable Number Estimates from Laboratory Microplates".
+
+     - 
+     - 
       
 
