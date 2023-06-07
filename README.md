@@ -14,7 +14,7 @@ Corresponding author:
 
 *The data files in this repo contain the raw MPN and CFU counts and their normalized values by grams of soil (MPN/g and CFU/g). All statistical analyses were performed in R v4.3.0 (R Core Team, 2023). Raw and normalized data counts, R outputs, and plots were compiled into an Excel spreadsheet.*
 
-MPN values were calculated with the Python package ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn.git).
+MPN values were calculated with the Python package ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn).
 
 
 
@@ -44,7 +44,7 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
 
    - 2.1. *Subfolder*: micrompn
    
-      - This folder contains the input and output files used with MicroMPN (https://github.com/USDA-ARS-GBRU/micrompn.git). The output of MicroMPN includes MPN, MPN adjusted, Jarvis 95%       CI, and a rarity index. Analysis of data was performed in R and both MPN and MPN adjusted values were analyzed. However, the scientific paper only discusses and displays results       for MPN values. Regardless, the conclusions of the paper remained the same. 
+      - This folder contains the input and output files used with ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn). The output of MicroMPN includes MPN, MPN adjusted, Jarvis 95%       CI, and a rarity index. Analysis of data was performed in R and both MPN and MPN adjusted values were analyzed. However, the scientific paper only discusses and displays results       for MPN values. Regardless, the conclusions of the paper remained the same. 
     
       - micrompn_input - "limit_detection_T48_Bio_1.csv"
         
@@ -90,13 +90,13 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
        <figcaption>Output of data re-arranged into 4 columns.</figcaption>
      </figure>    
      
-  **3. Folder: MicroMPN_soil_and_synthetic_communities
+**3. Folder**: MicroMPN_soil_and_synthetic_communities
   
-  - This folder contains the MPN and CFU count data from soil experiments conducted with synthetic communities. A total of six communities (C1 – C6), each composed of 10 strains, were evaluated for their biocontrol activity against R. solanacearum in soil microcosms.
+- This folder contains the MPN and CFU count data from soil experiments conducted with synthetic communities. A total of six communities (C1 – C6), each composed of 10 strains, were evaluated for their biocontrol activity against *R. solanacearum* in soil microcosms.
 
    - 3.1. *Subfolder*: micrompn
    
-      - This folder contains the input and output files used with MicroMPN (https://github.com/USDA-ARS-GBRU/micrompn.git). The output of MicroMPN includes MPN, MPN adjusted, Jarvis 95%       CI, and a rarity index. Analysis of data was performed in R and both MPN and MPN adjusted values were analyzed. However, the scientific paper only discusses and displays results       for MPN values. Regardless, the conclusions of the paper remained the same. 
+      - This folder contains the input and output files used with ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn). The output of MicroMPN includes MPN, MPN adjusted, Jarvis 95%       CI, and a rarity index. Analysis of data was performed in R. Both MPN and MPN adjusted values were analyzed. However, the scientific paper only discusses and displays results       for MPN values. The conclusions of the paper remain the same using MPN adjusted values. 
     
       - micrompn_input - "Copy_C1_C2_C3_T48.csv" and "Copy_C4_C5_C6_T48.csv"
         
@@ -115,9 +115,9 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
      - This folder contains a single file with all of the plots for soil-only microcosms. Both MPN and MPN adjusted data were analyzed in R and were plotted in Excel.
       
 
-**4. Folder: multiple_comparisons
+**4. Folder**: multiple_comparisons
 
- - To assess if a community’s suppressive activity was independent of the method (MPN-RFU microplate assay vs spotting on agar) being used, we compared the mean of every community to the mean of the control (rfp-Rs5). 
+- To assess if a community’s suppressive activity was independent of the method (MPN-RFU microplate assay vs spotting on agar) being used, we compared the mean of every community to the mean of the control (rfp-Rs5). 
 
    - 4.1. *Subfolder*: R_analysis
      
@@ -129,7 +129,7 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
          
     - 4.2. *Subfolder*: Excel_spreadsheet
       
-        - This folder contains a single file with all the plots corresponding to multiple comparison analysis. Both MPN and MPN adjusted data were analyzed in R and were plotted in Excel.
+       - This folder contains a single file with all the plots corresponding to multiple comparison analysis. Both MPN and MPN adjusted data were analyzed in R and were plotted in Excel.
 
       
       
