@@ -62,36 +62,9 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
          
   - 2.3. *Subfolder*: Excel_spreadsheet
       
-     - This folder contains a single file with all of the Excel plots. 
+     - This folder contains a single Excel file with the raw data sets, MicroMPN output, CFU/g data, and all of the plots published in the paper. 
       
-   - 2.4. *Subfolder*: SpectraMax_output_to_column_format
       
-     - This folder contains a python script which converts RFU microplate data (output of SpectraMax M3) to a column format. Users can then import the output file into MicroMPN               for MPN calculations.
-     
-     - input_file_example - "limit_detection_T48_bio_1"   
-             
-     - python_script - "three_col_updated.py"
-
-        - The python code returns RFU data in column format.
-           
-     - output_file_example - "limit_detection_T48_bio_1.csv"
-      
-     ### Input Example
-       ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/c524acf3-3de1-4062-9b84-31a12625d72c)
-
-       <figure>
-        <figcaption>Example of SpectraMax M3 RFU table format of a 96-well microplate.</figcaption>
-      </figure> 
-      
-    
-      
-     ### Output Example
-      ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/40d3c4f7-ade2-4844-9f42-d68c4df3e1d9)
-       
-      <figure>
-       <figcaption>Output of data re-arranged into 4 columns.</figcaption>
-     </figure>    
-     
 **3. Folder**: MicroMPN_soil_and_synthetic_communities
   
 - This folder contains the MPN and CFU count data from soil experiments conducted with synthetic communities. A total of six communities (C1 – C6), each composed of 10 strains, were evaluated for their biocontrol activity against *R. solanacearum* in soil microcosms.
@@ -116,7 +89,11 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
          
   - 3.3. *Subfolder*: Excel_spreadsheet
       
-     - This folder contains a single file with all of the Excel plots.
+     - This folder contains a single Excel file with the MicroMPN output, CFU/g data, and all of the plots published in the paper.
+   
+   - 3.4. *Subfolder*: Raw_data
+
+      - This contains the raw data sets for MPN and CFU data.
       
 
 **4. Folder**: multiple_comparisons
@@ -135,6 +112,33 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
       
        - This folder contains a single file with all the plots corresponding to multiple comparison analysis. Both MPN and MPN adjusted data were analyzed in R and were plotted in Excel.
 
+  
+5. **Folder**: SpectraMax_output_to_column_format
       
+     - This folder contains a python script which converts RFU microplate data (output of SpectraMax M3) to a column format compatible with ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn).
+           
+     - input_file_example - "limit_detection_T48_bio_1"   
+             
+     - python_script - "three_col_updated.py"
+
+        - The python code returns RFU data in column format.
+           
+     - output_file_example - "limit_detection_T48_bio_1.csv"
+      
+     ### Input Example
+       ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/c524acf3-3de1-4062-9b84-31a12625d72c)
+
+       <figure>
+        <figcaption>Example of SpectraMax M3 RFU table format of a 96-well microplate.</figcaption>
+      </figure> 
+      
+    
+      
+     ### Output Example
+      ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/40d3c4f7-ade2-4844-9f42-d68c4df3e1d9)
+       
+      <figure>
+       <figcaption>Output of data re-arranged into 4 columns.</figcaption>
+     </figure>    
       
 
