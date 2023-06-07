@@ -36,27 +36,18 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
 
    - 2.1. *Subfolder*: micrompn
    
-      - This folder contains the input and output files used with ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn). The output of MicroMPN includes MPN, MPN adjusted, Jarvis 95%       CI, and a rarity index.
-      
-      - micrompn_input - "limit_detection_T48_Bio_1.csv"
-        
-      - micrompn_output - "OUTFILE_raw_trim_limit_detection_T48_bio_1.csv"
+      - This folder contains the input ("soil_only_input.csv") and output ("OUTFILE_trim_soil_only.csv") files used with ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn) to calculate MPN values. The output of MicroMPN includes MPN, MPN adjusted, Jarvis 95%       CI, and a rarity index.
 
    - 2.2. *Subfolder*: R_analysis
      
-      - This folder contains two files, an R script and an input file. The R script computes a Pearson correlation, a linear regression, a Bland Altman analysis, and Fisher's F-test          using MPN/g and CFU/g data. The input file contains both MPN and MPN adjusted data. Users can run the analysis with MPN adjusted values by simply subsetting for the correct columns in the input file.
+      - This folder contains two files, an R script ("backup_R_corr_regre_BA_ftest_mpn_soil_only.txt") and an input ("soil_only_microcosms.csv") file. The R script computes a Pearson correlation, a linear regression, a Bland Altman analysis, and Fisher's F-test using MPN/g and CFU/g data. The input file contains both MPN and MPN adjusted data. Users can run the analysis with MPN adjusted values by simply subsetting for the correct columns in the input file.
 
-     -  Statistical analysis was performed in R v4.3.0 (R Core Team, 2023). Both MPN and MPN adjusted values were analyzed. However, the scientific paper only discusses and displays results       for MPN values. The conclusions of the paper were not affected by MPN adjusted values. 
+     -  Statistical analysis was performed in R v4.3.0 (R Core Team, 2023). Both MPN and MPN adjusted values were analyzed. However, the scientific paper only discusses and displays results for MPN values. The conclusions of the paper were not affected by MPN adjusted values. 
      
-      - R_script - "backup_R_corr_regre_BA_ftest_bio1_mpn.txt"
-         
-      - R_input_file - "limit_detection_bio1.csv"
-         
   - 2.3. *Subfolder*: Excel_spreadsheet
       
-     - This folder contains a single Excel file with the raw data sets, MicroMPN output, CFU/g data, and all of the plots published in the paper. 
-      
-      
+     - This folder contains a single Excel file ("git_micrompn_trim_norarity_soil_only.xlsx") with the raw data sets, MicroMPN output, CFU/g data, and all of the plots published in the paper. 
+        
 **3. Folder**: MicroMPN_soil_and_synthetic_communities
   
 - This folder contains the MPN and CFU count data from soil experiments conducted with synthetic communities. A total of six communities (C1 – C6), each composed of 10 strains, were evaluated for their biocontrol activity against *R. solanacearum* in soil microcosms.
