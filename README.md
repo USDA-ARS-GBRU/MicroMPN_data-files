@@ -26,17 +26,9 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
      
      - This folder contains two files, an R script and an input file. The R script computes a paired_t_test. 
 
-     - R_script - "paired_t_test_analysis.txt"
-
-     - R_input_file - "data_simple_complex.csv"
-
    - 1.2. *Subfolder*: Excel_spreadsheets
       
-      - This folder contains three Excel files.
-
-      - CFU_data - "CFU_simple.xlsx" and "CFU_complex.xlsx" (raw CFU data)
-
-      - plots - "data_simple_complex.xlsx"
+      - This folder contains three Excel files. Raw CFU data sets: "CFU_simple.xlsx" and "CFU_complex.xlsx". The plots published in the paper are found in "data_simple_complex.xlsx".
 
 **2. Folder**: MicroMPN_soil_only_microcosm
 
