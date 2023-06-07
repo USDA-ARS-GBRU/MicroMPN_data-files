@@ -54,31 +54,22 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
 
    - 3.1. *Subfolder*: micrompn
    
-      - This folder contains the input and output files used with ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn). The output of MicroMPN includes MPN, MPN adjusted, Jarvis 95%       CI, and a rarity index. 
-    
-      - micrompn_input - "Copy_C1_C2_C3_T48.csv" and "Copy_C4_C5_C6_T48.csv"
-        
-      - micrompn_output - "OUTFILE_trim_Copy_C1_C2_C3.csv" and "OUTFILE_trim_Copy_C1_C2_C3.csv"
+      - This folder contains the input ("Copy_C1_C2_C3_T48.csv" and "Copy_C4_C5_C6_T48.csv") and output ("OUTFILE_trim_Copy_C1_C2_C3.csv" and "OUTFILE_trim_Copy_C1_C2_C3.csv") files used with ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn). The output of MicroMPN includes MPN, MPN adjusted, Jarvis 95%       CI, and a rarity index. 
 
    - 3.2. *Subfolder*: R_analysis
      
-      - This folder contains two files, an R script and an input file. The R script computes a Pearson correlation, a linear regression, a Bland Altman analysis, and Fisher's F-test          using MPN/g and CFU/g data. The input file contains both MPN and MPN adjusted data. Users can run the analysis with MPN adjusted values by simply subsetting for the correct columns in the input file.
+      - This folder contains two files, an R script ("backup_dataMPN_micrompn_trim_norarity_community_R.txt") and an input ("data_micrompn_trim_norarity_community_R.csv") file. The R script computes a Pearson correlation, a linear regression, a Bland Altman analysis, and Fisher's F-test using MPN/g and CFU/g data. The input file contains both MPN and MPN adjusted data. Users can run the analysis with MPN adjusted values by simply subsetting for the correct columns in the input file.
 
-      -  Statistical analysis was performed in R v4.3.0 (R Core Team, 2023). Both MPN and MPN adjusted values were analyzed. However, the scientific paper only discusses and displays results       for MPN values. The conclusions of the paper were not affected by MPN adjusted values. 
-     
-      - R_script - "backup_dataMPN_micrompn_trim_norarity_community_R.txt"
-         
-      - R_input_file - "data_micrompn_trim_norarity_community_R.csv"
+      -  Statistical analysis was performed in R v4.3.0 (R Core Team, 2023). Both MPN and MPN adjusted values were analyzed. However, the scientific paper only discusses and displays results for MPN values. The conclusions of the paper were not affected by MPN adjusted values. 
          
   - 3.3. *Subfolder*: Excel_spreadsheet
       
-     - This folder contains a single Excel file with the MicroMPN output, CFU/g data, and all of the plots published in the paper.
+     - This folder contains a single Excel file ("data_microMPN_TRIM_Improbable.xlsx") with the MicroMPN output, CFU/g data, and all of the plots published in the paper.
    
    - 3.4. *Subfolder*: Raw_data
 
-      - This contains the raw data sets for MPN and CFU data per community experiment.
+      - This contains two Excel files ("Copy_C1-C3 MPN 48 H MPN fixed.xlsx" and "Copy_C4-C6 MPN 48 H MPN fixed.xlsx") with the raw data sets for MPN and CFU data.
       
-
 **4. Folder**: multiple_comparisons
 
 - To assess if a community’s suppressive activity was independent of the method (MPN-RFU microplate assay vs spotting on agar) being used, we compared the mean of every community to the mean of the control (rfp-Rs5). 
