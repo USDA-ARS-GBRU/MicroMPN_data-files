@@ -93,7 +93,7 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
    
    - 3.4. *Subfolder*: Raw_data
 
-      - This contains the raw data sets for MPN and CFU data.
+      - This contains the raw data sets for MPN and CFU data per community experiment.
       
 
 **4. Folder**: multiple_comparisons
