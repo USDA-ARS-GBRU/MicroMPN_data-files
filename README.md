@@ -56,9 +56,9 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
 
      -  Statistical analysis was performed in R v4.3.0 (R Core Team, 2023). Both MPN and MPN adjusted values were analyzed. However, the scientific paper only discusses and displays results       for MPN values. The conclusions of the paper were not affected by MPN adjusted values. 
      
-      - R_script - "backup_R_corr_regre_BA_ftest_mpn_soil_only.txt"
+      - R_script - "backup_R_corr_regre_BA_ftest_bio1_mpn.txt"
          
-      - R_input_file - "soil_only_microcosms.csv"
+      - R_input_file - "limit_detection_bio1.csv"
          
   - 2.3. *Subfolder*: Excel_spreadsheet
       
