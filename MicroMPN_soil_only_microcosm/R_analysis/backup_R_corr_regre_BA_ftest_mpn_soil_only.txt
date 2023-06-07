@@ -1,0 +1,76 @@
+library(tidyverse)
+library(rstatix)
+library(ggpubr)
+library(outliers)
+library(data.table)
+library(gridExtra)
+library(raster)
+library(AICcmodavg)
+library(car)
+library(SimplyAgree)
+library(gvlma)
+
+
+########MPN values calculated using the --trim_positives and rarity index greater than 1e-4, cutoff = 6
+#Users can run the analysis with MPN adjusted values by simply subsetting for the correct columns in the input file.
+#############################Running a correlation analysis
+
+data <- fread("soil_only_microcosms.csv")
+
+data <- data[,-c(2,5)]#removes column "microtiter" and "MPN"
+
+CFU <- dplyr::select(data, CFU)%>%
+  filter(CFU != "NA")
+
+as.numeric(as.character(CFU$CFU))
+
+MPN <- dplyr::select(data, MPN)%>%
+  filter(MPN != "NA")
+
+as.numeric(as.character(MPN$MPN))
+
+cor.test(MPN$MPN, CFU$CFU, alternative = "two.sided", method = "pearson", conf.level = 0.95)
+
+#######################Running linear regression in R
+#https://www.datacamp.com/tutorial/linear-regression-R
+
+
+lmdata <- lm(data$CFU ~ data$MPN, data = data)
+summary(lmdata)
+
+gvlma_object <- gvlma(lmdata, alphalevel = 0.05)
+
+plot(lmdata$residuals, pch = 16, col = "red")
+cooks.distance(lmdata)
+
+
+##################Bland Altman assumptions
+
+
+a1 <- agree_test(x = data$CFU, y = data$MPN, conf.level = 0.95, agree.level = 0.95)
+print(a1)
+check(a1)
+
+data_difference <- mutate(data, mean = ((MPN+CFU)/2), diff = CFU - MPN)
+
+norm_mean_diff = shapiro.test(x = data_difference$diff)
+
+
+#heteroskedasticity manual calculation: Breusch-Pagan Test
+bias = mean(data_difference$diff)
+ba_res = data_difference$mean - bias
+mlev = sum(ba_res^2) / length(ba_res)
+g = ba_res^2 / mlev
+aux = lm(g ~ data_difference$mean)
+tss = sum((g - 1)^2)
+ssr = sum((aux$resid)^2)
+LM = (tss - ssr) / 2
+p = pchisq(LM, 1, lower.tail=FALSE)
+
+#Fisher's F-test 
+
+#performing F-test with all the data
+data_ftest_all <- data %>%
+  pivot_longer(!Sample,  names_to ="Method", values_to = "Amount" )
+
+ftest_all <-var.test(Amount ~ Method, data = data_ftest_all)
