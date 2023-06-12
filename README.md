@@ -91,7 +91,9 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
 - This folder contains a Python script ("four_col_updated.py") that converts RFU microplate data (specifically the output of SpectraMax M3) to a column format compatible with ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn). An example input ("soil_only.txt") and output ("soil_only.csv") files are provided.
       
      ### Input Example
+    
      
+ 
      ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/c524acf3-3de1-4062-9b84-31a12625d72c)
 
      <figure>
@@ -101,9 +103,9 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
     
       
      ### Output Example
+        
+     ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/0a7c356b-c2cb-4117-bb45-08d64e78898f)
      
-     ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/40d3c4f7-ade2-4844-9f42-d68c4df3e1d9)
-       
      <figure>
       <figcaption>The input data was re-arranged into 4 columns.</figcaption>
     </figure>  
