@@ -93,8 +93,7 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
      ### Input Example
     
      
- 
-     ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/c524acf3-3de1-4062-9b84-31a12625d72c)
+     ![image](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/b361767a-4533-4208-8e0c-03226658e5e6)
 
      <figure>
       <figcaption>Example of SpectraMax M3 RFU table format of a 96-well microplate.</figcaption>
@@ -117,9 +116,9 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
 
       ### TOML Microplate layout example: 
 
-      ![wellmap dilution](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/995e55ca-3df7-4881-a87a-b5e4c57d161a)
+![wellmap dilution](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/1847f052-a7f6-44dc-b5ad-f35122726791)
+![wellmap replicate](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/574367de-1801-430d-aa82-fa46aa08e337)
 
-      ![wellmap replicate](https://github.com/USDA-ARS-GBRU/MPN-RFU-microplate-assay-data-files/assets/68250738/ef4308af-284b-47fa-9dcb-780b83a167ae)
 
 ```
 
@@ -129,7 +128,7 @@ wellmap.show("microplate.toml")
 
 ```
 
-  - To replicate our MPN estimates using the Python package ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn), the input files (see micrompn folders), and the TOML file provided here, simply run the following command:
+To replicate our MPN estimates using the Python package ["MicroMPN"](https://github.com/USDA-ARS-GBRU/micrompn), the input files (see micrompn folders), and the TOML file provided here, simply run the following command:
 
 ```
 
