@@ -1,4 +1,4 @@
-# Most probable number(MPN) relative fluorescence units microplate assay data files
+# Most probable number(MPN) fluorescence microplate assay data files
 
 The folders in this repository contain the data files used in our analysis for the paper *"A method for screening microbe viability in complex soil communities by rapid fluorescent, most probable number estimation in microplates"*.
 
