@@ -1,6 +1,6 @@
-# Most probable number(MPN) fluorescence microplate assay data files
+# Data files
 
-The folders in this repository contain the data files used in our analysis for the paper *"A method for screening microbe viability in complex soil communities by rapid fluorescent, most probable number estimation in microplates"*.
+The folders in this repository contain the data files used in our analysis for the paper *"MicroMPN: methods and software for high-throughput screening of microbe suppression in mixed populations"*.
 
 Authors: Karla Franco Meléndez<sup>1</sup>, Layla Schuster<sup>2</sup>, Melinda Chue Donahey<sup>2</sup>, Emily Kairalla<sup>2</sup>, M. Andrew Jansen<sup>3</sup>, Christopher Reisch<sup>2,4</sup>, Adam R. Rivers<sup>1#</sup>
 
