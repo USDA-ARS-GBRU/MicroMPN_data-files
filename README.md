@@ -75,11 +75,11 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
      
 **4. Folder**: multiple_comparisons
 
-- To assess if a community’s suppressive activity was independent of the method (MPN-RFU microplate assay vs spotting on agar) being used, we compared the mean of every community to the mean of the control (rfp-Rs5). 
+- To assess if a community’s suppressive activity was independent of the method (fluorMPN microplate assay vs spotting on agar) being used, we compared the mean of every community to the mean of the control (rfp-Rs5). 
 
    - 4.1. *Subfolder*: R_analysis
      
-      - This folder contains two files, an R script ("backup_oneway_dataMPN_micrompn_trim_norarity_community_R.txt") and an input ("data_micrompn_trim_norarity_community_R.csv") file. Differences between group means for the MPN-RFU microplate assay were compared by a one-way ANOVA, followed by the post-hoc test for multiple comparisons Tukey’s Honest Significant Differences. However, for spotting on agar, since the assumption of normality was violated, we ran the non-parametric test Kruskal-Wallis, followed by Dunn’s test for multiple comparisons. The input file contains both MPN and MPN-adjusted data. Users can run the analysis with MPN-adjusted values by simply subsetting for the correct columns in the input file.
+      - This folder contains two files, an R script ("backup_oneway_dataMPN_micrompn_trim_norarity_community_R.txt") and an input ("data_micrompn_trim_norarity_community_R.csv") file. Differences between group means for the fluorMPN microplate assay were compared by a one-way ANOVA, followed by the post-hoc test for multiple comparisons Tukey’s Honest Significant Differences. However, for spotting on agar, since the assumption of normality was violated, we ran the non-parametric test Kruskal-Wallis, followed by Dunn’s test for multiple comparisons. The input file contains both MPN and MPN-adjusted data. Users can run the analysis with MPN-adjusted values by simply subsetting for the correct columns in the input file.
          
     - 4.2. *Subfolder*: Excel_spreadsheet
       
