@@ -114,3 +114,14 @@ write.csv(sw_results_mpn, "sw_results_mpn.csv", row.names = FALSE) # write data 
 TK_data_MPN <- TukeyHSD(MPN_model, conf.level = .95)
 TK_df_MPN <- as.data.frame(TK_data_MPN[[1]])
 write.csv(TK_df_MPN,"communityMPN_tukeYtest.csv", row.names = TRUE)
+
+
+#per reviewer's request
+#Dunnett’s Test for Comparing Several Treatments With a Control: MPN & CFU
+#make the contents of column Sample into a factor, otherwise there is an issue with specifying the control variable below
+data$Sample <- as.factor(data$Sample)
+dunnett_test_MPN = DunnettTest(x=data$MPN, g=data$Sample, control = "rfp-Rs5")
+dunnett_test_CFU = DunnettTest(x=data$CFU, g=data$Sample, control = "rfp-Rs5")
+
+
+
