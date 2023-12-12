@@ -74,3 +74,5 @@ data_ftest_all <- data %>%
   pivot_longer(!Sample,  names_to ="Method", values_to = "Amount" )
 
 ftest_all <-var.test(Amount ~ Method, data = data_ftest_all)
+#or run var.test by specifying x and y, where x has the highest variance
+#ftest_all <- var.test(data$MPN, data$CFU)
