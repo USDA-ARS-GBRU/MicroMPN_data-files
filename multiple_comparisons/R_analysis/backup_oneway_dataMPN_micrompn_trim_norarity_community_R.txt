@@ -68,6 +68,9 @@ write.csv(TK_df_CFU,"CFU_tukeYtest.csv", row.names = TRUE)
 # because the assumption of normality was not met, I am running a kruskal wallis test with the CFU data
 kt <- kruskal.test(CFU ~ Sample, data = df_CFU)
 wt <- pairwise.wilcox.test(CFU, Sample, p.adjust.method = "bonferroni", paired = FALSE, data = df_CFU)
+#make column Sample into factor
+df_CFU$Sample <- as.factor(df_CFU$Sample)
+
 dunnt<- dunnTest(CFU ~ Sample, data = df_CFU, method = "bonferroni")
 
 
