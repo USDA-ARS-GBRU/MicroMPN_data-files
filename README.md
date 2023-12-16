@@ -142,6 +142,8 @@ To replicate our MPN estimates using the Python package ["MicroMPN"](https://git
 ```
 
  - For more information on how to install MicroMPN visit (https://github.com/USDA-ARS-GBRU/micrompn).
+
+-  See Jupyter Notebook "Determining_Threshold.ipynb" to learn how to determine a threshold value to supply to MicroMPN.
  
  - An example on how to run MicroMPN from a Jupyter Notebook is available through protocols.io under the name "MicroMPN: Software for Automating Most Probable Number Estimates from Laboratory Microplates" (https://protocols.io/view/micrompn-software-for-automating-most-probable-num-cu5rwy56.html).
 
