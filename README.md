@@ -72,7 +72,7 @@ MPN values were calculated with the Python package ["MicroMPN"](https://github.c
 
       - This contains two Excel files ("Copy_C1-C3 MPN 48 H MPN fixed.xlsx" and "Copy_C4-C6 MPN 48 H MPN fixed.xlsx") with the raw data sets for MPN and CFU data.
         
-      - 3.5. *Subfolder*: VCA_analysis
+   - 3.5. *Subfolder*: VCA_analysis
       
       - This folder contains an R script for running a VCA ("VCA_analysis.4.txt"), input file ("data_micrompn_trim_norarity_community_R.csv"), and several plots from the analysis ("variability_mpn.png", "variability_cfu.png", "vca_plots_normality_outliers.pdf").
      
