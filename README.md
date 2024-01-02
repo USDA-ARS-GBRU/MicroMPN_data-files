@@ -1,14 +1,15 @@
+[![DOI](https://zenodo.org/badge/637930956.svg)](https://zenodo.org/doi/10.5281/zenodo.8387479)
+
+
 # Data files
 
-The folders in this repository contain the data files used in our analysis for the paper *"MicroMPN: methods and software for high-throughput screening of microbe suppression in mixed populations"*.
+The folders in this repository contain the data files used in our analysis for the paper *"MicroMPN: methods and software for high-throughput screening of microbe suppression in mixed populations"* forthcoming in the journal ASM Spectrum.
 
 Authors: Karla Franco Meléndez<sup>1</sup>, Layla Schuster<sup>2</sup>, Melinda Chue Donahey<sup>2</sup>, Emily Kairalla<sup>2</sup>, M. Andrew Jansen<sup>3</sup>, Christopher Reisch<sup>2,4</sup>, Adam R. Rivers<sup>1#</sup>
 
 Affiliations:
 <sup>1</sup> United States Department of Agriculture, Agricultural Research Service, Genomics and Bioinformatics Research Unit, Gainesville, FL 32608, USA; <sup>2</sup> Department of Microbiology and Cell Science, Institute of Food and Agricultural Sciences, University of Florida, Gainesville, FL 32603, USA; <sup>3</sup> United States Department of Agriculture, Agricultural Research Service, Systematic Entomology Laboratory, Electron and Confocal Microscopy Unit, Beltsville, MD 20013, USA; <sup>4</sup>Present address: Genomatica, San Diego, CA 92121 USA
 
-Corresponding author:
-#Adam Rivers: adam.rivers@usda.gov
 
 ## Data Folders
 
